@@ -618,7 +618,7 @@ input[type="checkbox"],
     font-size: 30px;
     color: $clr-blue-700;
     @include breakpoints(mobile) {
-      font-size: 18px;
+      font-size: 17px;
     }
   }
   &.tomorrow {
