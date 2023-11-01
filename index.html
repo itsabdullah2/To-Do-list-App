@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <!-- Font Awesome CSS File -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start Navigation Bar -->
+  <div class="nav-bar">
+    <span class="user-name">User name</span>
+    <div class="extra-info">
+      <div class="task-n-calender">
+        <span class="add-task">Add Task</span>
+        <span class="calender">Calendar</span>
+        <div class="calendar-holder">
+          <div class="header">
+            <p class="current-date">September 2023</p>
+            <div class="icons">
+              <button id="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button id="next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Navigation Bar -->
+  <div class="page-container">
+    <i class="open-icon fa-solid fa-angles-right"></i>
+
+    <!-- Start Side Bar -->
+    <div class="side-nav">
+      <i class="close-icon fa-solid fa-angles-left"></i>
+      <div class="segment-of-sections">
+        <ul class="sections">
+          <li>
+            <a href="all-days.html">
+              <i class="fa-solid fa-calendar-minus"></i>All days</a>
+          </li>
+          <li>
+            <a href="tomorrow.html"><i class="fa-solid fa-calendar-day"></i>Tomorrow</a>
+          </li>
+          <li>
+            <a href="nextSeven.html"><i class="fa-solid fa-bullseye"></i>Next 7 days</a>
+          </li>
+          <li>
+            <a href="inbox.html"><i class="fa-solid fa-inbox"></i>Inbox</a>
+          </li>
+          <li>
+            <a href="timer.html"><i class="fa-regular fa-clock"></i>Timer</a>
+          </li>
+        </ul>
+        <ul class="pg-task">
+          <li class="task-holder">
+            <i class="fa-regular fa-file"></i>
+            <span id="task-title"><a href="index.html">Home page</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="change-name">
+        <i class="fa-solid fa-pen"></i>
+        <input type="text" placeholder="Your name">
+      </div>
+    </div>
+    <!-- End Side Bar -->
+
+    <!-- Start Page Structure -->
+    <div class="page-content">
+
+      <div class="content">
+        <div class="input-of-title">
+          <input type="text" id="title-field" placeholder="Untitled" autocomplete="off" />
+        </div>
+        <div class="tasks-container">
+          <div class="tasks"></div>
+        </div>
+      </div>
+      <!-- End Page Structure -->
+    </div>
+  </div>
+
+  <!-- Clock structure -->
+  <div class="clock">
+    <i class="fa-solid fa-caret-right"></i>
+    <span class="hours"></span>
+    <span class="minutes"></span>
+    <span class="seconds"></span>
+    <span class="session"></span>
+  </div>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timer</title>
+  <!-- Font Awesome CSS File -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="landing pomodoro">
+    <h3>Pomodoro</h3>
+  </div>
+  <section class="timer-page">
+    <!-- Pomodoro structure -->
+    <div class="pomodoro-container">
+      <div class="pomodoro-segment">
+        <div class="panel">
+          <span class="work">Work</span>
+          <span class="break">Break</span>
+        </div>
+        <div class="pomodoro-timer">
+          <div class="circle">
+            <span class="minutes-of-pomodoro">25</span>
+            <span>:</span>
+            <span class="seconds-of-pomodoro">00</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="start"><i class="fa-solid fa-play"></i></button>
+          <button class="reset">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+          </button>
+          <button class="pause"><i class="fa-solid fa-pause"></i></button>
+        </div>
+        <div class="edit-time">
+          <div class="field">
+            <input type="number" class="input work-input" value="25" min="1" />
+            <button class="btn edit-work">Edit Work Time</button>
+          </div>
+          <div class="field">
+            <input type="number" class="input break-input" value="5" min="1" />
+            <button class="btn edit-break">Edit Break Time</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clock Structure -->
+  <div class="clock">
+    <i class="fa-solid fa-caret-right"></i>
+    <span class="hours"></span>
+    <span class="minutes"></span>
+    <span class="seconds"></span>
+    <span class="session"></span>
+  </div>
+
+  <!-- Button structure to add pomodoro segment -->
+  <button id="btn-to-add-segment"><i class="fa-solid fa-add"></i></button>
+
+  <!-- switch page button -->
+  <button id="switch-btn"><i class="fa-solid fa-arrow-left"></i></button>
+  <script src="./js/allDays.js" type="module"></script>
+  <script src="./js/timer.js" type="module"></script>
+</body>
+
+</html>

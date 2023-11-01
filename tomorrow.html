@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomorrow</title>
+  <!-- Font Awesome CSS File -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="landing tomorrow">
+    <h3>Tomorrow</h3>
+    <div class="fields">
+      <input type="text" class="input-of-task" placeholder="Add your task" />
+      <button id="add-btn">Add task</button>
+    </div>
+  </div>
+  <div class="page-container">
+    <i class="open-icon fa-solid fa-angles-right"></i>
+
+    <!-- Start Side Bar -->
+    <div class="side-nav">
+      <i class="close-icon fa-solid fa-angles-left"></i>
+      <div class="segment-of-sections">
+        <ul class="sections">
+          <li>
+            <a href="all-days.html">
+              <i class="fa-solid fa-calendar-minus"></i>All days</a>
+          </li>
+          <li>
+            <a href="tomorrow.html"><i class="fa-solid fa-calendar-day"></i>Tomorrow</a>
+          </li>
+          <li>
+            <a href="nextSeven.html"><i class="fa-solid fa-bullseye"></i>Next 7 days</a>
+          </li>
+          <li>
+            <a href="inbox.html"><i class="fa-solid fa-inbox"></i>Inbox</a>
+          </li>
+          <li>
+            <a href="timer.html"><i class="fa-regular fa-clock"></i>Timer</a>
+          </li>
+        </ul>
+        <ul class="pg-task">
+          <li class="task-holder">
+            <i class="fa-regular fa-file"></i>
+            <span id="task-title"><a href="index.html">Home page</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Side Bar -->
+    <!-- Start Page Structure -->
+    <div class="page-content">
+      <div class="content">
+        <div class="tasks-holder">
+          <div class="tasks-container">
+            <div class="tasks"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Page Structure -->
+  </div>
+  <script src="./js/tomorrow.js" type="module"></script>
+</body>
+
+</html>

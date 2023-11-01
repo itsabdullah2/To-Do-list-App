@@ -1,0 +1,74 @@
+// Colors
+$dark: #191919;
+$darker: #0d0d0d;
+$darkest: #000;
+$c-grey: #ccc;
+$d-grey: #ddd;
+$e-grey: #eee;
+$txt-clr: #777;
+$white: #fff;
+$clr-red-600: rgb(220 38 38);
+$clr-yellow-500: rgb(202 138 4);
+$clr-green-500: rgb(22 163 74);
+$clr-blue-800: rgb(30 64 175);
+$clr-blue-700: rgb(29 78 216);
+$clr-blue-600: rgb(37 99 235);
+$clr-blue-500: rgb(59 130 246);
+$checkBox: dodgerblue;
+// Transitions
+$transition: 0.3s;
+// Typography
+$f-11: 11px;
+$f-13: 13px;
+$f-14: 14px;
+$f-15: 15px;
+$f-18: 18px;
+$fw-500: 500;
+$fw-600: 600;
+// Margin & Padding
+$p-5: 5px;
+$pn-5: 5px;
+$p-20: 20px;
+$p-15: 15px;
+$p-10: 10px;
+$mr-5: 5px;
+$mn-5: 5px;
+$m-20: 20px;
+$m-15: 15px;
+$m-10: 10px;
+// Build Arrows
+@mixin arrow-top {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  right: 0;
+  top: -20px;
+  border-bottom-color: $e-grey;
+}
+@mixin arrow-right {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40px;
+  border-left-color: $e-grey;
+}
+@mixin arrow-bottom {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  border-top-color: $e-grey;
+}
+@mixin arrow-left {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -40px;
+  border-right-color: $e-grey;
+}
