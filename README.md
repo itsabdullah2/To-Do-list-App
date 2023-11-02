@@ -12,7 +12,8 @@
 Secondly, the features of each page:
 
 home page:
-- You can add normal tasks to it via the button above called "add task", and next to this button is another button you can show and hide the calendar, and there is an input at the beginning of the page that helps you add a title to the page, and the page also contains a clock. You can hide it or show it as you like.-- Also, you can add your name to the home page through input in the side nav
+- You can add normal tasks to it via the button above called "add task", and next to this button is another button you can show and hide the calendar, and there is an input at the beginning of the page that helps you add a title to the page, and the page also contains a clock. You can hide it or show it as you like.
+- Also, you can add your name to the home page through input in the side nav
 
 Tomorrow page:
 - A page that helps you add the tasks for the next day.
