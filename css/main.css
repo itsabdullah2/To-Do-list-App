@@ -423,7 +423,6 @@ input[type=checkbox],
 
 .side-nav {
   position: relative;
-  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -559,6 +558,7 @@ input[type=checkbox],
 }
 @media (max-width: 767px) {
   .side-nav {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
