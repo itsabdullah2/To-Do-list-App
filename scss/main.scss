@@ -322,7 +322,6 @@ input[type="checkbox"],
 }
 .side-nav {
   position: relative;
-  display: none;
   flex-direction: column;
   width: 270px;
   height: 100%;
@@ -424,6 +423,7 @@ input[type="checkbox"],
     }
   }
   @include breakpoints(mobile) {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
