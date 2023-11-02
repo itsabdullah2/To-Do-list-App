@@ -321,6 +321,7 @@ input[type="checkbox"],
   /* Start Page Content */
 }
 .side-nav {
+  display: flex;
   position: relative;
   flex-direction: column;
   width: 270px;
